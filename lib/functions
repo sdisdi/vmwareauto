@@ -1,0 +1,27 @@
+# 
+# errmsg()
+# Prints an error message 
+#
+
+function errmsg() { echo -e "${RED}ERR: $*${NC}" >&2 && exit 1 ;}
+
+# 
+# warnmsg()
+# Prints a warning message
+#
+
+function warnmsg() { echo -e "${RED}WARN:${NC} $*" >&2 ; }
+
+# 
+# msg()
+# Prints a message
+#
+
+function msg() { echo -e "${BLUE}MSG:${NC} $*" >&2 ; }
+
+# 
+# msg()
+# Prints a message
+#
+
+function timemsg() { echo -e "${CYAN}ELAPSED time:${NC} $* minutes" >&2 ; }
